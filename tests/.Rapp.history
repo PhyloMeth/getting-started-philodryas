@@ -1,0 +1,502 @@
+sample(LETTERS)
+flips <- sample(c(0,1), 100, prob=c(0.3,0.7))
+flips <- sample(c[0,1], 100, prob=c(0.3,0.7))
+?sample
+flips <- sample(0:1, 100, prob=c(0.3,0.7))
+flips <- sample(0:1, 100, prob=c(0.3,0.7), replace=TRUE)
+flips <- sample(c(0,1), 100, replace = TRUE, prob = c(0.3, 0.7))
+flips
+sum(flips,1)
+sum(flips)
+?rbinom
+rbinom(1, size = 100, prob = 0.7)
+flips2 <- rbinom(1, size = 100, prob = 0.7)
+flips2 <- rbinom(100, size = 1, prob = 0.7)
+flips2
+sum(flips2)
+?rnorm
+?rbinom
+?rnorm
+rnorm(10)
+?rnorm
+rnorm(10,mean=100,sd=25)
+?rpois
+rpois(5,mean=10)
+rpois(5,lambda=10)
+my_pois <- replicate(100, rpois(5, 10))
+my_pois
+cm <- colMeans(my_pois)
+hist(cm)
+d1 <- Sys.Date()
+class(d1)
+unclass(d1)
+d1
+d2 <- as.Date("1969-01-01")
+unclass(d2)
+d3 <- as.Date("1985-05-29")
+unclass(d3)
+t1 <- Sys.time()
+t1
+class(t1)
+unclass(t1)
+t2 <- as.POSIXlt(Sys.time())
+class(t2)
+t2
+unclass(t2)
+str(unclass(t2))
+t2$min
+weekdays(d1)
+months(t1)
+quarter(t1)
+quarters(t1)
+quarters(t2)
+t3 <- c("October 17, 1986 08:24")
+t3 <- c("October" "17", "1986" "08:24")
+t3 <- c("October 17", "1986 08:24")
+t3:#
+| "October 17, 1986 08:24"
+t3: "October 17, 1986 08:24"
+t3: c("October 17, 1986 08:24")
+strptime(t3, "October 17, 1986 08:24")
+t3 <- strptime("October 17, 1986 08:24")
+ok()
+t3 <- strptime(Sys.time("October 17, 1986 08:24"))
+t3 <- strptime("October 17, 1986 08:24")
+?strptime
+t3 <- strptime("October 17, 1986 08:24",  "%b, %d, %Y %H:%M")
+t3 <- strptime("October 17, 1986 08:24",  "%b %d, %Y %H:%M")
+info()
+t3 <- "October 17, 1986 08:24"
+t4 <- strptime(t3, "%B %d, %Y %H:%M")
+t4
+class(t4)
+Sys.time() > t1
+Sys.time() - t1
+difftime(Sys.time(), t1, units = 'days')
+swirl
+swirl()
+bye()
+exit
+cube <- function(x, n) {#
+        x^3#
+}
+cube(3)
+x <- 1:10#
+if(x > 5) {#
+        x <- 0#
+}
+x <- 1:10#
+if(x > 5) {#
+        x <- 5#
+}
+x <- 1:10#
+if(x > 5) {#
+        x <- 10#
+}
+x <- 1:10 {#
+if(x > 5) #
+        x <- 10#
+}
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z <- 10#
+f(3)
+rm(lists())
+rm(lists=ls())
+rm(list=ls())
+ls()
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z <- 10#
+f(3)
+x <- 5#
+y <- if(x < 3) {#
+        NA#
+} else {#
+        10#
+}
+y
+rm(list=ls())
+x <- 5#
+y <- if(x < 3) {#
+        NA#
+} else {#
+        10#
+}
+y
+h <- function(x, y = NULL, d = 3L) {#
+        z <- cbind(x, d)#
+        if(!is.null(y))#
+                z <- z + y#
+        else#
+                z <- z + f#
+        g <- x + y / z#
+        if(d == 3L)#
+                return(g)#
+        g <- g + 10#
+        g#
+}
+x <- 1#
+if(x > 5) {#
+        x <- 0#
+}
+x
+library(rgbif)
+key <- name_backbone(name='Python reticulatus')$speciesKey
+dat <- occ_search(taxonKey=key, return='data', limit=300)
+key <- name_backbone(name='Python')$speciesKey
+dat <- occ_search(taxonKey=key, return='data', limit=300)
+key <- name_backbone(name='Python reticulatus')$speciesKey
+key <- name_backbone(name='Pantherophis guttatus')$speciesKey
+dat <- occ_search(taxonKey=key, return='data', limit=500)
+a
+>install.packages(“splits”, repos=”http://R-Forge.R-project.org“)
+install.packages(“splits”, repos=”http://R-Forge.R-project.org“)
+install.packages("splits", repos=”http://R-Forge.R-project.org“)
+install.packages("splits", repos="http://R-Forge.R-project.org")
+install.packages("paran", repos="http://R-Forge.R-project.org")
+>install.packages(“paran”, dependencies=T)
+install.packages("paran", dependencies=T)
+install.packages("splits", repos="http://R-Forge.R-project.org")
+splits
+library(splits)
+install.packages("devtools")
+devtools::install_github("bomeara/phrapl")
+library(phrapl)
+install.packages(c("locfit", "KernSmooth", "akima"), dependencies=TRUE)
+getwd()
+library(Geneland)
+Geneland.GUI
+Geneland.GUI()
+library("bGMYC")
+alloucheIBM <- function(A=100, N=100, ERmin=-30, ERmax=30, Emin=-30, Emax=30,
+sig=5, timesteps=1000, pM=.1, pR=1, R=2, I=0.1){
+E <- runif(A, Emin, Emax) # habitat patch environment type
+mu.i <- runif(N, ERmin, ERmax) # optimum environment
+sigma <- rep(sig, N) # niche width
+Z <- array(dim=c(N)) # normalization constant
+for (i in 1:N){
+integrand <- function(E) {
+exp(-((E - mu.i[i]) ^ 2) / (2 * sigma[i] ^ 2))
+}
+res <- integrate(integrand, lower=ERmin, upper=ERmax)
+Z[i] <- 1 / res$value
+}
+Pcol <- array(dim=c(A, N))#
+  for (i in 1:A){#
+    for (j in 1:N){#
+      Pcol[i, j] <- Z[j] * exp(-((E[i] - mu.i[j]) ^ 2) / (2*sigma[j] ^ 2))#
+    }#
+  }
+species <- rep(1:N, each=A)#
+  E <- rep(E, N)#
+  Pr.estab <- c(Pcol)#
+  niche.d <- data.frame(species, E, Pr.estab)#
+  niche.d <- niche.d[with(niche.d, order(species, E)),]#
+#
+  # initialize output#
+  state <- array(0, dim=c(timesteps, A, N))#
+  richness <- rep(NA, timesteps)#
+  richness[1] <- 0#
+  p.occ <- rep(NA, timesteps)#
+  p.occ[1] <- 0
+for (t in 2:timesteps){#
+    state[t,,] <- state[t-1,,]#
+#
+    ## DEATHS ###
+    deaths <- array(rbinom(A*N, 1, c(state[t,,])*pM), dim=c(A, N))#
+    state[t,,] <- state[t,,] - deaths#
+#
+    ## BIRTHS ###
+    pot.fecundity <- array(rpois(A * N, lambda = c(state[t,,] * R)), dim=c(A, N))#
+    repro <- array(rbinom(A*N, 1, pR), dim=c(A, N))#
+    fecundity <- repro * pot.fecundity#
+    sum.fec <- apply(fecundity, 2, sum) # number of offspring per species#
+#
+    ## OFFSPRING COLONIZE ###
+    occupancy <- apply(state[t,,], 1, max)#
+    if (sum(occupancy) < A & sum(sum.fec) > 0){ # if empty sites & new offspring#
+      empty.sites <- which(occupancy == 0)#
+      occ.sites <- which(occupancy == 1)#
+      # randomly assign sites (empty & filled) to each offspring individual#
+      col.sites <- sample(1:A, sum(sum.fec), replace=T)#
+      col.spec <- rep(1:N, times=sum.fec) # how many of each species colonizing#
+      colonizing.offspring <- array(0, dim=c(A, N))#
+      for(i in 1:length(col.sites)){#
+        colonizing.offspring[col.sites[i], col.spec[i]] <-#
+          colonizing.offspring[col.sites[i], col.spec[i]] + 1#
+      }#
+      # offspring attempting to colonize occupied sites fail to displace#
+      colonizing.offspring[occ.sites,] <- 0#
+#
+      # which colonizing offspring can actually establish?#
+      binom.mat <- ifelse(colonizing.offspring > 0, 1, 0)#
+      colonists <- array(rbinom(n = A * N,#
+                                size = c(colonizing.offspring),#
+                                prob = c(binom.mat * Pcol)),#
+                         dim=c(A, N))#
+#
+      # are there colonization conflicts (> 1 individual trying to colonize each site?)#
+      attempting <- apply(colonists, 1, sum)#
+      if (any(attempting > 1)){#
+        # resolve colonization conflicts#
+        conflicts <- which(attempting > 1) # which sites have conflicts#
+        for (k in conflicts){ # for each conflict#
+          # how many indiv's of each spp attempting to simultaneously colonize?#
+          n.attempting <- rep(1:N, times = colonists[k,])#
+          # randomly select one successful from those attempting#
+          successful <- sample(n.attempting, size=1)#
+          new.row <- rep(0, length.out=N)#
+          new.row[successful] <- 1#
+          colonists[k,] <- new.row # individual becomes the only colonist#
+        }#
+      }#
+      # add successful colonists#
+      state[t,,] <- state[t,,] + colonists#
+    }#
+#
+    ## IMMIGRANTS COLONIZE ###
+    occupancy <- apply(state[t,,], 1, max)#
+    if(sum(occupancy) < A){#
+      empty.sites <- which(occupancy == 0)#
+      # which species immigrate to each site?#
+      immigration <- array(rbinom(length(empty.sites)*N,#
+                                  1, I), dim=c(length(empty.sites), N))#
+      # which immigrants establish?#
+      Pest <- immigration * Pcol[empty.sites, ]#
+      establishment <- array(rbinom(length(Pest), 1, c(Pest)),#
+                             dim=c(length(empty.sites), N))#
+#
+      # resolve conflicts arising from simultaneous colonization#
+      col.attempts <- apply(establishment, 1, sum)#
+      if (any(col.attempts > 1)){ # if individuals are trying to simultaneously colonize#
+        conflicts <- which(col.attempts > 1) # which empty sites have conflicts#
+        for (k in conflicts){ # for each conflict#
+          # how many of individuals of each species are attempting to simultaneously colonize?#
+          attempting <- rep(1:N, times = establishment[k,])#
+          # successful individual randomly selected from those attempting#
+          successful <- sample(attempting, size=1)#
+          new.row <- rep(0, length.out=N)#
+          new.row[successful] <- 1#
+          establishment[k,] <- new.row#
+        }#
+      }#
+      # add successful immigrants#
+      state[t, empty.sites, ] <- state[t, empty.sites,] + establishment#
+    }#
+    richness[t] <- sum(apply(state[t,,], 2, max))#
+    p.occ[t] <- length(which(state[t,,] == 1)) / A#
+  }#
+  return(list(richness=richness, p.occ = p.occ, state=state, niche.d=niche.d))#
+}
+out <- alloucheIBM(pM=.1, Emin=-30, Emax=30, sig=8, R=8, N=100, A=300, I=.01, timesteps=1000)#
+plot(out$richness, type="l", xlab="Timestep", ylab="Species richness")
+plot(out$richness, type="l", xlab="Timestep", ylab="Species richness")
+ERmin <- -50#
+ERmax <- 50#
+global.median <- median(c(ERmin, ERmax))#
+n.intervals <- 30#
+lower.limits <- seq(ERmin, global.median-.5, length.out=n.intervals)#
+upper.limits <- seq(ERmax, global.median, length.out=n.intervals)#
+hab.het <- upper.limits - lower.limits # habitat heterogeneity
+n.iter <- 3 # number of iterations per interval#
+sd.rich <- array(NA, dim=c(n.intervals, n.iter))#
+end.rich <- array(NA, dim=c(n.intervals, n.iter))#
+for (i in 1:n.intervals){#
+  for (iter in 1:n.iter){#
+    Emin <- lower.limits[i]#
+    Emax <- upper.limits[i]#
+    out <- alloucheIBM(pM=.9, Emin=Emin, Emax=Emax, sig=10, pR=1, R=1,#
+                   N=100, A=100, I=.9, timesteps=300)#
+    timesteps <- length(out$richness)#
+    end.rich[i, iter] <- mean(out$richness[timesteps-100:timesteps])#
+    sd.rich[i, iter] <- sd(out$richness[timesteps-100:timesteps])#
+  }#
+}
+end.richness <- c(t(end.rich))#
+end.sd <- c(t(sd.rich))#
+interval <- rep(hab.het, each=n.iter)#
+plot.d <- data.frame(interval, end.richness, end.sd)
+end.richness <- c(t(end.rich))
+}
+end.richness <- c(t(end.rich))
+}
+}#
+}
+exit
+require(ggplot2)#
+range <- aes(ymax=end.richness + end.sd, ymin=end.richness - end.sd)#
+ggplot(plot.d, aes(x=interval, y=end.richness)) +#
+  geom_point(shape=1, size=2) + geom_errorbar(range) +#
+  theme_classic() +#
+  xlab("Habitat heterogeneity") + ylab("Species richness")
+install.packages("optimx", dependencies=TRUE, repos="http://cran.rstudio.com")
+install.packages("BioGeoBEARS", dependencies=TRUE, repos="http://cran.rstudio.com")
+library(BioGeoBEARS)
+3+4
+x <- 3
+y <- 4
+x+y
+library(Rcmdr)
+x <- 4
+y <- 3
+x+y
+3+4
+34/2
+x <- 3
+y <- 29347
+x+y
+y <- 2
+x+y
+z <- "Oi"
+z
+data(iris)
+iris
+head(iris)
+summary(iris)
+hist(iris)
+?hist
+hist(iris[Sepal.Lenght,Sepal.Width])
+?hist
+?install.package
+??install.package
+install.packages("devtools")
+library(devtools)
+update.packages()
+install.packages("ctv")
+library(ctv)
+install.views(c("Phylogenetics", "WebTechnologies"))
+install.packages("testthat")
+install.views(c("Phylogenetics", "WebTechnologies"))
+install.packages("backblazer", dependencies=TRUE)
+library(testthat)
+test_check("GettingStarted")
+\name{PhyloMethGettingStarted}
+install.package("GettingStarted")
+install.packages("GettingStarted")
+update.packages
+library(ctv) #t
+install.views(c("Phylogenetics", "WebTechnologies"))
+install.packages("SigTree")
+install.packages("phyloseq")
+library(testthat)
+test_check("GettingStarted")
+install.packages("phyloseq", dependencies=TRUE)
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+install.packages( #
+    lib  = lib <- .libPaths()[1],#
+    pkgs = as.data.frame(installed.packages(lib), stringsAsFactors=FALSE)$Package,#
+    type = 'source'#
+)
+library(ctv)
+install.views(c("Phylogenetics", "WebTechnologies"))
+install.packages("testthat")
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+biocLite("Biostrings")
+install.packages("rgeos", repos="http://R-Forge.R-project.org", type="source")
+clear
+library(ape)
+rcoal(5)
+help(packages-"ctv")
+help(packages="ctv")
+help(package="ctv")
+library(ape)
+help(package="ape")
+GetHowManyTrees_exercise <- function(ntaxa=10) {
+result <- howmanytrees(10)
+return(result)
+}
+GetHowManyTrees_exercise
+result
+GetHowManyTrees_exercise <- function(ntaxa=10) {#
+	#ape can compute this for us.#
+	result <- howmanytrees(ntaxa)#
+	return(result)	#
+}
+GetAlignment_exercise <- function() {#
+	#Let's see where mafft is installed#
+	print(system("which mafft"))#
+	data(woodmouse)#
+	result <- mafft(woodmouse) #hint, look up one line#
+	return(result)#
+}
+GetHowManyTrees_solution <- function(ntaxa=10) {#
+	#ape can compute this for us.#
+	result <- howmanytrees(ntaxa)#
+	return(result)	#
+}#
+#
+GetAlignment_solution <- function() {#
+	#Let's see where mafft is installed#
+	print(system("which mafft"))#
+	data(woodmouse)#
+	result <- mafft(woodmouse)#
+	return(result)#
+}
+GetHowManyTrees_solution
+print(GetHowManyTrees_solution)
+print(result)
+library(testthat)
+test_check("GettingStarted")
+GetHowManyTrees_exercise <- function(ntaxa=10) {#
+	#ape can compute this for us.#
+	result <- howmanytrees(ntaxa)#
+	return(result)	#
+}
+GetAlignment_exercise <- function() {#
+	#Let's see where mafft is installed#
+	print(system("which mafft"))#
+	data(woodmouse)#
+	result <- mafft(woodmouse) #hint, look up one line#
+	return(result)#
+}
+test_that("GetHowManyTrees_exercise",{#
+	expect_equal(GetHowManyTrees_exercise(), 34459425)#
+})
+library(ape)
+test_that("GetHowManyTrees_exercise",{#
+	expect_equal(GetHowManyTrees_exercise(), 34459425)#
+})
+test_that("GetAlignment_exercise",{#
+	library(ape)#
+	data(woodmouse)#
+	alignment <- GetAlignment_exercise()#
+	expect_equal(dim(alignment)[2], dim(woodmouse)[2])#
+})
+GetHowManyTrees_exercise <- function(ntaxa=10) {#
+	#ape can compute this for us.#
+	result <- howmanytrees(ntaxa)#
+	return(result)	#
+}#
+#
+GetAlignment_exercise <- function() {#
+	#Let's see where mafft is installed#
+	print(system("which mafft"))#
+	data(woodmouse)#
+	result <- mafft(woodmouse) #hint, look up one line#
+	return(result)#
+}
+test_that("GetHowManyTrees_exercise",{#
+	expect_equal(GetHowManyTrees_exercise(), 34459425)#
+})#
+#
+test_that("GetAlignment_exercise",{#
+	library(ape)#
+	data(woodmouse)#
+	alignment <- GetAlignment_exercise()#
+	expect_equal(dim(alignment)[2], dim(woodmouse)[2])#
+})
+library(ape)
+help(package="ape")
